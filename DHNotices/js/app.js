@@ -13,7 +13,7 @@ function renderizarNoticias() {
         nodoCards[i].innerHTML += `<img src= ${noticias[i].imgUrl} >`;
     }
 }
-renderizarNoticias() 
+
 
 function esNacional() {
     let nodoCards = document.querySelectorAll(".card")
@@ -24,7 +24,7 @@ function esNacional() {
         }
     }
 };
-esNacional()
+
 
 
 
