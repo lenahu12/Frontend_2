@@ -1,5 +1,4 @@
 const contenedor = document.querySelector(".container");
-
 function renderizarNoticias() {
     let nodoCards = 0;
     let nodoTextoYTitulo = 0;
@@ -13,8 +12,6 @@ function renderizarNoticias() {
         nodoCards[i].innerHTML += `<img src= ${noticias[i].imgUrl} >`;
     }
 }
-
-
 function esNacional() {
     let nodoCards = document.querySelectorAll(".card")
     for (let i = 0; i < noticias.length; i++) {
