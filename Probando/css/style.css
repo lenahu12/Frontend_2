@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body {
+    width: 120rem;
+}
+h1 {
+    font-family: 'Tenor Sans', sans-serif;
+    color:whitesmoke;
+    margin-bottom: 30rem;
+}
+header {
+    height: 8rem;
+    background-image: url("../img/fondoTopBot.jpg")
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background: url("../img/iaruuu.jpg") repeat;
+
+    height: 42.55rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 8rem;
+    background-image: url("../img/fondoTopBot.jpg")
+}
