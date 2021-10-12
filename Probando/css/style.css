@@ -13,22 +13,25 @@ h1 {
     margin-bottom: 30rem;
 }
 header {
+    display: flex;
+    flex-wrap: wrap;
     height: 8rem;
-    background-image: url("../img/fondoTopBot.jpg")
+    background-image: url("../img/fondoTopBot.jpg");
 }
 main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     background-size: contain;
     background: url("../img/iaruuu.jpg") repeat;
-
     height: 42.55rem;
 }
 footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
     height: 8rem;
-    background-image: url("../img/fondoTopBot.jpg")
+    background-image: url("../img/fondoTopBot.jpg");
 }
