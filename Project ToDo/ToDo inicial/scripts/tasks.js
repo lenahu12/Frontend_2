@@ -6,6 +6,11 @@ window.addEventListener('load', function() {
     const apiUrlTasks = 'https://ctd-todo-api.herokuapp.com/v1/tasks';
     const descripcionTarea = document.querySelector('#nuevaTarea');
     const formulario = document.querySelector('.nueva-tarea');
+    const tareasPendientes = document.querySelectorAll('.tarea')
+
+
+
+
     formulario.addEventListener('submit', function(event) { 
         event.preventDefault();
         if (descripcionTarea != "") {
@@ -41,6 +46,13 @@ window.addEventListener('load', function() {
         .then(response => response.json())
         .then(data => {
             console.log(data)
+            for (let i = 0; i < data.length; i++) {
+                let nombreTarea = tareasPendientes[i].children[1].children[0];
+                let fechaTarea = tareasPendientes[i].children[1].children[1];
+                nombreTarea.innerText = data[i].description;
+                fechaTarea.innerText = data[i].createdAt;
+                
+            }
         });
     };
 
