@@ -24,8 +24,6 @@ function esNacional() {
     }
   }
 }
-renderizarNoticias();
-esNacional();
 
 // function renderizarNoticias() {
 //     for (let i = 0; i < noticias.length; i++) {
